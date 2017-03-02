@@ -2,7 +2,6 @@
 #include <windows.h>
 using namespace std;
 void jukebox(int x);
-int num;
 int input;
 int main() {
 	cout << "What sound do you want to hear? For yer a wizard, harry, press (1). For Invader Zim, press (2). For Sterling Archer, press (3). For Johnny Bravo, press (4)." << endl;
