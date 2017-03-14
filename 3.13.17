@@ -1,0 +1,22 @@
+#include <iostream>
+#include <stdio.h>
+#include <stdlib.h>
+#include <ctime>
+using namespace std;
+void Badguy();
+int main() {
+	srand(time(NULL));
+	while (1) {
+		Badguy();
+		system("pause");
+	}
+}
+void Badguy() {
+	int x = rand() % 100 + 1;
+	if(x <= 50)
+		cout << "goomba!" << endl;
+	if(x >50 && x<80)
+	cout << "koopa!" << endl;
+	if(x > 80 && x < 100)
+	cout << "Shy guy!" << endl;
+}
