@@ -1,0 +1,17 @@
+#include <iostream>//fixed code
+using namespace std;
+int num = 0;
+int biggest;
+
+
+int main() {
+	cout << "Enter three numbers" << endl;
+	for (int i = 0; i < 10; i++) {
+		cin >> biggest;
+		if (biggest > num) {
+			num = biggest;
+		}
+	}
+	cout << num << endl;
+
+}
