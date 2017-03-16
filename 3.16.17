@@ -1,0 +1,23 @@
+#include <iostream>
+#include <stdio.h>
+#include <stdlib.h>
+#include <ctime>
+using namespace std;
+int ave;
+int max;
+int num = 0;
+int sum;
+int main() {
+	srand(time(NULL));
+	for (int i = 0; i < 100; i++) {
+		int max = (rand() % 1000 + 0);
+		cout << max << endl;
+		if (max > num) {
+			num = max;
+			ave = ave + max;
+		}
+	}
+	cout <<"Maximum is"<< num << endl;
+	ave = ave / 100;
+	cout <<"Average is"<< ave << endl;
+}
