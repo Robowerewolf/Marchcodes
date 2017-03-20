@@ -1,0 +1,22 @@
+#include <iostream>
+using namespace std;
+int main() {
+	int input;
+	bool isPrime = true;
+	cout << "Enter number" << endl;
+	cin >> input;
+
+	while (1) {
+		isPrime = true;
+		input++;
+		for (int i = 2; i < input; i++)
+			if (input%i == 0)
+				isPrime = false;
+
+
+		if (isPrime) {
+			cout << input << "is the first prime number after that" << endl;
+			return 0;
+		}
+	}
+}
